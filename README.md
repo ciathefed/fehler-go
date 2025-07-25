@@ -157,6 +157,24 @@ const (
 
 Use `WithFormat()` to switch output style.
 
+### SARIF Export
+
+```go
+func EmitSarif(diagnostics []*Diagnostic, w io.Writer) error
+```
+
+Writes SARIF 2.1.0 output to any `io.Writer`, including rule metadata if `.Code` is set.
+
+Example:
+
+```go
+file, _ := os.Create("report.sarif.json")
+defer file.Close()
+fehler.EmitSarif([]*fehler.Diagnostic{diag}, file)
+```
+
+This enables integration with GitHub code scanning, VS Code, and other SARIF-compatible tools.
+
 ## Format Examples
 
 ### GCC
