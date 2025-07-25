@@ -5,6 +5,7 @@ A diagnostic and error reporting library for Go, modeled after modern compilers 
 This is a port of [fehler](https://github.com/ciathefed/fehler) written in Zig.
 
 ![Go](https://img.shields.io/badge/Go-1.24.5-blue?style=flat-square%5C&logo=go)
+![Tests](https://img.shields.io/github/actions/workflow/status/ciathefed/fehler-go/go.yml?label=Tests%20%F0%9F%A7%AA&style=flat-square)
 
 ## Features
 
