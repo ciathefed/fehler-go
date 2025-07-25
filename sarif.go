@@ -85,8 +85,8 @@ func sarifLevel(sev Severity) string {
 	}
 }
 
-// / Emits all diagnostics in SARIF format to the given writer.
-// / Supports version 2.1.0. Includes rule metadata if code is set.
+// Emits all diagnostics in SARIF format to the given writer.
+// Supports version 2.1.0. Includes rule metadata if code is set.
 func EmitSarif(diagnostics []*Diagnostic, w io.Writer) error {
 	const sarifVersion = "2.1.0"
 	const sarifSchema = "https://json.schemastore.org/sarif-2.1.0.json"
